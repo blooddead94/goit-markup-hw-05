@@ -488,7 +488,7 @@ img {
 /* #region - Backdrop - Start */
 
 
-/* ====== BACKDROP ====== */
+/* #region ====== BACKDROP ====== */
 .backdrop {
     display: flex;
     align-items: center;
@@ -776,7 +776,9 @@ background-color: #404bbf;
 
 .footer-box {
     display: flex;
-    align-items: baseline;
+    align-items: flex-start;
+    gap: 40px;
+    margin: 0 auto;
 }
 
 .footer-container {
@@ -851,6 +853,82 @@ background-color: #404bbf;
     width: 24px;
     height: 24px;
 }
+
+
+/* #region - Subscribe - Start */
+
+.subscribe-container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* Заголовок */
+.subscribe-title {
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+}
+/* Форма */
+.subscribe-form {
+    display: flex;
+    gap: 24px;
+}
+
+/* Лейбл */
+.subscribe-label {
+    display: flex;
+}
+
+/* Поле вводу */
+.subscribe-input {
+    width: 264px;
+    height: 40px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: #ffffff;
+}
+
+.subscribe-input::placeholder {
+    color: #ffffff;
+}
+
+/* Кнопка підписки */
+.subscribe-button {
+    min-width: 165px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #4D5AE5;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+}
+
+/* Іконка всередині кнопки */
+.subscribe-icon {
+    margin-left: 16px;
+}
+
+/* #endregion - Subscribe - Completed */
+
 
 /* #endregion Footer - Completed */
 
