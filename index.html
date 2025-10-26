@@ -459,10 +459,15 @@ https://cdn.jsdelivr.net/npm/the-new-css-reset@1.11.3/css/reset.min.css
     </main>
     <div class="backdrop is-open">
       <div class="modal">
+        <button type="button" class="modal-close-btn">
+          <svg class="modal-close-icon" width="8" height="8" aria-hidden="true">
+            <use href="./images/icons.svg#cross"></use>
+          </svg>
+        </button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <form class="action">
           <div class="form-field">
-            <label for="user-name" class="form-label">Name</label>
+            <label for="user-name" class="form-label"></label>
             <div class="input-wrapper">
               <svg class="input-icon" width="18" height="24" aria-hidden="true">
                 <use href="./images/icons.svg#person"></use>
@@ -473,11 +478,12 @@ https://cdn.jsdelivr.net/npm/the-new-css-reset@1.11.3/css/reset.min.css
                 type="text"
                 name="user-name"
                 id="user-name"
+                placeholder="Name"
               />
             </div>
           </div>
           <div class="form-field">
-            <label for="user-name" class="form-label">Phone</label>
+            <label for="user-name" class="form-label"></label>
             <div class="input-wrapper">
               <svg class="input-icon" width="18" height="24" aria-hidden="true">
                 <use href="./images/icons.svg#phone"></use>
@@ -486,13 +492,14 @@ https://cdn.jsdelivr.net/npm/the-new-css-reset@1.11.3/css/reset.min.css
                 class="form-input"
                 aria-colspan=""
                 type="text"
-                name="user-name"
-                id="user-name"
+                name="user-phone"
+                id="phone"
+                placeholder="Phone"
               />
             </div>
           </div>
           <div class="form-field">
-            <label for="user-name" class="form-label">Email</label>
+            <label for="user-name" class="form-label"></label>
             <div class="input-wrapper">
               <svg class="input-icon" width="18" height="24" aria-hidden="true">
                 <use href="./images/icons.svg#email"></use>
@@ -503,10 +510,38 @@ https://cdn.jsdelivr.net/npm/the-new-css-reset@1.11.3/css/reset.min.css
                 type="text"
                 name="user-name"
                 id="user-name"
+                placeholder="Email"
               />
             </div>
           </div>
+          <div class="form-field">
+            <label for="user-comment" class="form-label visually-hidden">
+              Comment
+            </label>
+            <p class="comment-descr">Comment</p>
+            <textarea
+              class="form-input comment-input"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Text input"
+              rows="4"
+            ></textarea>
+          </div>
+          <div class="form-checkbox">
+            <input
+              type="checkbox"
+              id="user-privacy"
+              name="user-privacy"
+              class="checkbox-input"
+              required
+            />
+            <label for="user-privacy" class="checkbox-label">
+              I accept the terms and conditions of the
+              <a href="#" class="privacy-link">Privacy Policy</a>
+            </label>
+          </div>
         </form>
+        <button type="submit" class="form-submit-btn">Send</button>
       </div>
     </div>
     <footer class="footer-info">
