@@ -595,7 +595,6 @@ https://cdn.jsdelivr.net/npm/the-new-css-reset@1.11.3/css/reset.min.css
                 name="user-comment"
                 id="user-comment"
                 placeholder="Text input"
-                rows="4"
               ></textarea>
             </div>
           </div>
@@ -611,7 +610,11 @@ https://cdn.jsdelivr.net/npm/the-new-css-reset@1.11.3/css/reset.min.css
               required
             />
             <label for="user-privacy" class="checkbox-label">
-              <span class="checkbox-box" aria-hidden="true"></span>
+              <span class="checkbox-box">
+                <svg class="checkbox-icon" width="10" height="8">
+                  <use href="./images/icons.svg#check"></use>
+                </svg>
+              </span>
               I accept the terms and conditions of the
               <a href="#" class="privacy-link">Privacy Policy</a>
             </label>
