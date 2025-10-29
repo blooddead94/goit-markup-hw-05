@@ -514,9 +514,7 @@ img {
     pointer-events: none;
 }
 
-.modal-container {
-    margin-bottom: 16px;
-}
+
 
 .modal {
     position: absolute;
