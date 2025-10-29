@@ -594,6 +594,10 @@ img {
     font-family: "Roboto", sans-serif;
 }
 
+.form-field {
+    margin-bottom: 16px;
+}
+
 .input-wrapper {
     position: relative;
     width: 100%;
